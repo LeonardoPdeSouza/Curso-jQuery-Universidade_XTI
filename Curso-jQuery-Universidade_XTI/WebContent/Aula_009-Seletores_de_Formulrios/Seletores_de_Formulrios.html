@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Seletores de Formulrios</title>
+	<style type="text/css">
+            /* Altera a cor dos elementos */
+           form {
+               background-color: #ccc;
+               padding: 10px;
+               width: 300px;
+               border-style: solid;
+           }
+           div {
+           padding: 5px;
+           }
+           textarea {
+           	width: 280px;
+           	height: 50px;
+           }
+        </style>
+	
+	<script type="text/javascript" 	src="https://code.jquery.com/jquery-1.5.2.min.js"></script>
+	<script type="text/javascript" src="js/Seletores_de_Formulrios.js"></script>
+</head>
+<body>
+	<form>
+
+                        <div>
+                            <label for="text">Text:</label>
+                                <input type="text"/>
+                        </div>
+
+                        
+                            <label for="radio" >Radios:</label>
+                                <input type="radio" value="Masculino" checked="checked"> Masculino </input>
+                                <input type="radio" value="Feminino"/> Feminino </input>
+                        
+
+                        <div>
+                            <label for="password" ">Password:</label>
+                                <input type="password">
+                        </div>
+
+                        <div >
+                            <label for="checkbox">Checkbox:</label>
+                                <input type="checkbox" checked="checked"> HTML </input>
+                                <input type="checkbox"> CSS </input>
+                                <input type="checkbox"> JQUERY </input>
+                        </div>
+
+                        <div >
+                            <label for="select" >Select:</label>
+                                <select >
+                                    <option value="br" selected="selected">Brasil</option>
+                                    <option value="ch">China</option>
+                                    <option value="eua">EUA</option>
+                                    <option value="jp" disabled="disabled">Japão</option>
+                                    <option value="ag" disabled="disabled">Argentina</option>
+                                </select>
+                        </div>
+
+                        <div >
+                            <label for="file" >File:</label>
+                                <input type="file">
+                            </div>
+                        </div>
+
+                        <div >
+                            <label for="texteArea" >Textarea:</label> 
+                            <div >                           
+                                <textarea>Escreva Aqui</textarea>
+                            </div>
+                        </div>
+
+                        <div >                          
+                            <div >
+                                <input type="submit" value="Submit" >                               
+                                                           
+                                <input type="reset" value="Reset">                                
+                                                         
+                                <input type="button" value="Button" ">
+                            
+                        </div>
+
+                    </form>
+</body>
+</html>
